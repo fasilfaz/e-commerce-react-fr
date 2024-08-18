@@ -5,10 +5,10 @@ import Hero from '../components/Hero';
 
 const Home = () => {
   const { products } =  useContext(ProductContext);
-  // console.log(products)
+  console.log(products,"pro")
 
   const filteredProducts = products.filter(item => {
-    return item.category === "men's clothing" || item.category === "women's clothing";
+    return item.category === "men's clothing" || item.category === "women's clothing" || item.category === "electronics" || item.category === "jewelery";
   });
   return <div>
     <Hero/>
